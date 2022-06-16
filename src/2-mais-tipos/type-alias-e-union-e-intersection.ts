@@ -1,4 +1,4 @@
-type User = {
+type user = {
     name: string;
     lastName: string;
     birthday?: string;
@@ -37,7 +37,7 @@ type About = {
 
 
 //unindo o type user e o type about
-type Profile = User & About
+type Profile = user & About
 const userWithProfile: Profile = {
     name: 'raphael',
     lastName: 'Moura',
@@ -45,4 +45,3 @@ const userWithProfile: Profile = {
     bio: 'Olá meu nome é raphael',
     interests: ['musica', 'jogos', 'pão doce']
 }
-
